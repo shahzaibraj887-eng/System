@@ -1,0 +1,63 @@
+name: system
+description: An RPG-inspired personal progression app built with Flutter & Firebase.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.14.0
+  cloud_firestore: ^4.14.0
+  firebase_storage: ^11.6.0
+
+  # State Management
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  riverpod_generator: ^2.3.0
+
+  # Routing
+  go_router: ^12.0.0
+
+  # UI
+  flutter_animate: ^4.2.0
+  lottie: ^2.7.0
+  badges: ^3.1.0
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  shared_preferences: ^2.2.0
+  http: ^1.1.0
+
+  # Date & Time
+  timezone: ^0.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.0
+  riverpod_generator: ^2.3.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: PixelFont
+      fonts:
+        - asset: assets/fonts/pixel_font.ttf
